@@ -1,0 +1,16 @@
+---
+title: "MAP_CAMILA"
+author: "CAMILA"
+date: "06/09/2020"
+output: html_document
+---
+
+```{r}
+library(leaflet)
+
+# Create map for the Sydney Opera House -33.856764, 151.215298
+Map <- leaflet() %>%
+  addTiles() %>%   
+  addMarkers(lat=-33.856764, lng=151.215298, popup="The famous Sydney Opera House! https://www.sydneyoperahouse.com")
+Map
+```
